@@ -15,17 +15,23 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+
+  <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-war-plugin</artifactId>
+  <version>2.2</version>
+ </plugin>
   
 <distributionManagement>
 <repository>
     <id>releases</id>
     <!-- CHANGE HERE by your team nexus server -->
-    <url>http://3.84.4.116:8081/repository/maven-releases/</url>
+    <url>http://13.203.105.226:8081/</url>
   </repository>
   <snapshotRepository>
     <id>snapshots</id>
     <!-- CHANGE HERE by your team nexus server -->
-    <url>http://3.84.4.116:8081/repository/maven-snapshots/</url>
+    <url>http://13.203.105.226:8081/</url>
    </snapshotRepository>
 </distributionManagement>
 
